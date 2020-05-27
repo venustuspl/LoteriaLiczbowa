@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lotto Generator</string>
+    <string name="generuj">Generuj</string>
+    <string name="witaj_w_aplikacji_w_kt_rej_mo_esz_wygenerowa_liczby_do_obstawiania_w_du_ym_lotku">Witaj w aplikacji w której możesz wygenerować liczby do obstawiania w dużym lotku.</string>
 </resources>

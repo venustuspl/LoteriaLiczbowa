@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,21 +11,25 @@
         android:layout_width="421dp"
         android:layout_height="60dp"
         android:onClick="onClick"
-        android:text="Generuj"
+        android:text="@string/generuj"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="-2dp" />
+        android:layout_marginTop="35dp"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Witaj w aplikacji w której możesz wygenerować liczby do obstawiania w dużym lotku."
+        android:text="@string/witaj_w_aplikacji_w_kt_rej_mo_esz_wygenerowa_liczby_do_obstawiania_w_du_ym_lotku"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="49dp" />
 
     <WebView
+        android:id="@+id/webView"
         android:layout_width="410dp"
         android:layout_height="585dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="145dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_below="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="1dp" />
+
+</RelativeLayout>
