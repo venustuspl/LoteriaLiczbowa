@@ -8,11 +8,21 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:text="Generuj"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="337dp"
+        android:layout_width="412dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="233dp"
+        android:layout_marginBottom="242dp"
         android:onClick="onClick"
-        />
+        android:text="Generuj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Witaj w aplikacji w której możesz wygenerować liczby do obstawiania w dużym lotku."
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="49dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
