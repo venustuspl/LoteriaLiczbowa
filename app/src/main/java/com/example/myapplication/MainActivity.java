@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             }
             if (czyjest == false) lista.add(nowe);
         }
+        Collections.sort(lista);
         String napis = "Wylosowano 6 liczb: ";
         for (int i : lista) napis += i + " ";
         przycisk.setText(napis);
